@@ -151,6 +151,13 @@ button small {
   flex-wrap: wrap;
   justify-content: center;
 }
+.modal-title {
+  font-size: 20px;
+  line-height: 1;
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
 
 .header__logo {
   position: relative;
@@ -211,7 +218,6 @@ button small {
 
 .head {
   background-color: #100b0b;
-  /* padding: 85px 0 25px 0; */
   padding: 12px 0 25px 0;
   color: #fff;
   font-size: 14px;
@@ -347,7 +353,6 @@ button small {
   font-size: 22px;
   padding: 0;
   color: #222222;
-  /* padding-left: 15px; */
 }
 .price ul li {
   border-bottom: 1px solid rgba(153, 153, 153, .3);
@@ -402,7 +407,6 @@ button small {
 .price__list {
   text-align: left;
   margin: 0;
-  /* padding-left: 15px; */
 }
 .price__descr {
   padding: 15px 30px;
@@ -445,14 +449,6 @@ button small {
   text-align: center;
 }
 
-/* .free__item {
-  background-color: #fff;
-  border-radius: 7px;
-  box-shadow: 0 1px 1px rgb(0 0 0 / 20%);
-  font-size: 18px;
-  padding: 20px;
-  margin: 25px 0;
-} */
 .free__box {
   text-align: center;
 }
@@ -535,7 +531,6 @@ button small {
 .about-2__img {
   box-shadow: 0 0 0 5px #ebebeb;
   padding: 25px;
-  /* transition: all .3s; */
   border-radius: 100%;
 }
 .about-2__img img{
@@ -557,22 +552,12 @@ button small {
 .about-2__item:hover .about-2__img {
   transition: all .5s;
   box-shadow: 0 0 0 5px #fb404b;
-  animation: bounceOut .4s linear;
-
-  /* -webkit-transition: all .5s ease 0s;
-  -o-transition: all .5s ease 0s;
-  transition: all .5s ease 0s;
-  -webkit-box-shadow: 0 0 0 5px #fb404b;
-  box-shadow: 0 0 0 5px #fb404b;
-  -webkit-animation: bounceOut .4s linear;
-  animation: bounceOut .4s linear; */
 }
 
 .guarantees__item {
   background-color: #ececec;
   text-align: center;
   padding: 15px;
-  /* margin: 25px 0; */
   border-radius: 7px;
   color: #222;
   height: 100%;
@@ -820,6 +805,41 @@ button small {
 .support__list {
   list-style: initial;
   font-size: 20px;
+}
+
+.accounts__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 0 5px #ffcfd2;
+  border-radius: 100%;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+  transition: all .5s;
+  padding: 60px 25px;
+}
+.accounts__item:hover {
+  box-shadow: 0 0 0 5px #fb404b;
+}
+.accounts__img {
+  width: 100px;
+  margin: 0 auto;
+}
+.accounts__img img {
+  max-width: 100%;
+}
+.accounts__text {
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  color: #222222;
+}
+.accounts__text span {
+  font-size: 16px;
 }
 
 footer {

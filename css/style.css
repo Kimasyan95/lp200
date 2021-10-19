@@ -7,7 +7,7 @@ body {
   font-family: Cuprum, sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.625;
+  line-height: 1.47;
   padding-top: 73px;
 }
 hr {
@@ -110,6 +110,7 @@ button small {
   padding: 15px;
   border-radius: 7px;
   text-align: center;
+  box-shadow: 0 0 24px 0 rgb(0 0 0 / 6%), 0 1px 0 0 rgb(0 0 0 / 2%);
 }
 .form p {
   line-height: 20px;
@@ -134,7 +135,6 @@ button small {
   font-size: 30px;
   line-height: 35px;
   margin-bottom: 10px;
-  text-align: left;
 }
 .panel__subtitle {
   line-height: 5px;
@@ -144,6 +144,14 @@ button small {
   border: none;
   padding: 15px 25px;
   box-shadow: 0 1px 1px rgb(0 0 0 / 20%);
+  text-align: left;
+}
+.panel__title--center {
+  text-align: center;
+}
+.panel__subtitle--center {
+  margin-bottom: 20px;
+  text-align: center;
 }
 .align-items-center {
   display: flex;
@@ -180,7 +188,7 @@ button small {
 .header nav {
   flex: 0 0 80%;
   background-color: black;
-  padding: 8px 0;
+  padding: 9px 0;
 }
 .header .navbar {
   border: none;
@@ -239,6 +247,9 @@ button small {
 }
 .head__contacts {
   text-align: right;
+}
+.head__contacts .button {
+  margin-top: 20px;;
 }
 
 .home {
@@ -324,7 +335,6 @@ button small {
 .services__item__container:hover {
   border: 2px solid #e13846;
   color: #e13846;
-  cursor: pointer;
 }
 .services__item__img {
   margin-bottom: 10px;
@@ -361,6 +371,8 @@ button small {
 }
 .price ul .border-top {
   border-top: 1px solid rgba(153, 153, 153, .3);
+  line-height: 26px;
+  padding: 5px 0;
 }
 .price ul a {
   color: #de1a25;
@@ -549,10 +561,6 @@ button small {
 .about-2__text {
   font-size: 18px;
 }
-.about-2__item:hover .about-2__img {
-  transition: all .5s;
-  box-shadow: 0 0 0 5px #fb404b;
-}
 
 .guarantees__item {
   background-color: #ececec;
@@ -561,6 +569,9 @@ button small {
   border-radius: 7px;
   color: #222;
   height: 100%;
+}
+.guarantees__item p {
+  line-height: 1.2;
 }
 .guarantees__title {
   font-size: 20px;
@@ -616,25 +627,19 @@ button small {
   position: relative;
 }
 .retargeting__list li:before {
-  content: "•";
+  content: "●";
   display: block;
   position: absolute;
   color: #de1a25;
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 700;
   left: -12px;
+  top: -1px;
 }
 .retargeting__link {
   margin-bottom: 40px;
 }
 
-.team .panel__title {
-  text-align: center;
-}
-.team .panel__subtitle {
-  margin-bottom: 20px;
-  text-align: center;
-}
 .team .panel__img img {
   margin: 0 auto;
 }
@@ -669,6 +674,10 @@ button small {
 .development {
   color: #fff;
 }
+.development a {
+  text-decoration: none;
+  color: unset;
+}
 .development__item {
   padding: 15px;
   margin-bottom: 25px;
@@ -677,6 +686,7 @@ button small {
   border-radius: 5px;
   min-height: 377px;
   transition: all .5s;
+  font-size: 20px;
 }
 .development__item:hover {
   -webkit-box-shadow: inset 0 0 0 5px #ebebeb;
@@ -970,8 +980,17 @@ section.black {
 
 .section__list li {
   color: #fb404b;
+  position: relative;
 }
-
+.section__list li:before {
+  content: "●";
+  position: absolute;
+  color: #de1a25;
+  font-size: 12px;
+  font-weight: 300;
+  left: -12px;
+  top: 5px;
+}
 .section__list li span {
   color: #222;
 }
@@ -1252,7 +1271,7 @@ section.black {
     text-align: center;
   }
   .question__company-images img {
-    max-width: 300px;
+    max-width: 290px;
   }
   .trainings__item--constantin .trainings__title {
     text-align: center;
@@ -1286,11 +1305,24 @@ section.black {
   .header__menu a {
     font-size: unset;
   }
+  .head {
+    text-align: center;;
+  }
+  .head__contacts {
+    text-align: center;
+  }
   .panel__title {
     font-size: 22px;
     font-weight: 700;
   }
   .footer {
     text-align: center;
+  }
+  .accounts__item {
+    width: 260px;
+    height: 260px;
+  }
+  .accounts__text {
+    font-size: 23px;
   }
 }

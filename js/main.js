@@ -6,18 +6,18 @@ $(document).ready(function() {
 
     $(this).remove();
   });
-  
-  // $(".js-phone-field").inputmask("+7 (999) 999-9999", {
-  //   placeholder: "_",
-  //   clearMaskOnLostFocus: false,
-  // });
 
-  const menu = document.querySelector('.header__menu');
-  hamburger = document.querySelector('.hamburger');
+  $('.hamburger').on('click', () => {
+    $('.hamburger').toggleClass('hamburger_active');
+    $('.header__menu').toggleClass('active');
+  });
 
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('hamburger_active');
-    menu.classList.toggle('active');
+
+  $("#up").on("click", function (event) {
+    event.preventDefault(); 
+    var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+  $('body,html').animate({scrollTop: top}, 1500);
   });
 
 });
